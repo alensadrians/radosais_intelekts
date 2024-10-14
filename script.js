@@ -3,20 +3,98 @@ const wordList = [
     'iedvesma',
     'iztēle',
     'patents',
-    'idejas',
+    'ideja',
     'dizains',
-    'dati'
+    'dati',
+    'aizsargāt',
+    'orģināls',
+    'neatklāt',
+    'palīdzība',
+    'dizainparaugs',
+    'izpēte',
+    'autortiesības',
+    'pirātisms',
+    'plaģiātisms',
+    'risinājums',
+    'tiesības',
+    'jauns',
+    'īstenot',
+    'vēsture',
+    'ražot',
+    'īpašums',
+    'produkts',
+    'publisks',
+    'lietot',
+    'netirgo',
+    'iesniegt',
+    'līgums',
+    'sarežģīts',
+    'valde',
+    'iesniegums',
+    'detalizēts',
+    'apraksts',
+    'pieteikums',
+    'rezultāts',
+    'krāsa',
+    'forma',
+    'investors',
+    'reģistrēt',
+    'gudrs',
+    'tirgus',
+    'darbs',
+    'c',
+    'r'
+
     
 ];
 
 const wordDefinitions = {
-    'inovācija': 'Jaunumu radīšana vai ieviešana, kuras pamatā ir oriģinālas idejas, radošas pieejas un netradicionāli risinājumi.',
-    'iedvesma': 'Emocionāls un intelektuāls stāvoklis, kas izraisa jaunu ideju un koncepciju veidošanos, bieži kā atbildi uz ārējiem stimuliem vai iekšēju refleksiju.',
-    'iztēle': 'Spēja garīgi veidot un pārdomāt jaunas situācijas, attēlus vai idejas, kas var būt pamatā jauniem radošiem risinājumiem vai mākslas darbiem.',
-    'patents': ' ir juridisks dokuments, kas apliecina izgudrotāja ekskluzīvās tiesības uz savu izgudrojumu.',
-    'idejas': 'Radošais Intelekts bieži vien sākas ar ideju ģenerēšanu, jo tieši idejas veido pamatu inovācijām - tehnoloģijām, mākslinieciskām izpausmēm vai biznesa risinājumiem.',
-    'dizains': 'attiecas uz vizuālo vai funkcionālo objektu veidošanu, kas ietver gan estētiku, gan funkcionalitāti - radīt jaunas formas, praktiskus risinājumus.',
-    'dati': 'ļauj cilvēkiem saprast tirgus tendences, lietotāju vajadzības vai tehnoloģiskos progresus, to izmantošana palīdz attīstīt jaunas idejas vai uzlabot esošos dizainus un produktus.'
+    'inovācija': 'Jaunumu radīšana vai ieviešana, kuras pamatā ir oriģinālas idejas, radošas pieejas un netradicionāli risinājumi',
+    'iedvesma': 'Iekšējās aktivitātes un jūtu intensitātes palielināšanās, garīgo un fizisko spēku sasprindzinājums, kas pēkšņi paaugstina radošā darba produktivitāti',
+    'iztēle': 'Spēja garīgi veidot un pārdomāt jaunas situācijas, attēlus vai idejas, kas var būt pamatā jauniem radošiem risinājumiem vai mākslas darbiem',
+    'patents': 'Intelektuālā īpašuma veids, kas aizsargā izgudrojumus. Izgudrojums var būt ierīce, paņēmiens, viela vai bioloģisks materiāls',
+    'ideja': 'Intelektuālais īpašums bieži vien sākas ar ideju ģenerēšanu, jo tieši idejas veido pamatu inovācijām - tehnoloģijām, mākslinieciskām izpausmēm vai biznesa risinājumiem',
+    'dizains': 'Attiecas uz vizuālo vai funkcionālo objektu veidošanu, kas ietver gan estētiku, gan funkcionalitāti - radīt jaunas formas, praktiskus risinājumus',
+    'dati': 'ļauj Cilvēkiem saprast tirgus tendences, lietotāju vajadzības vai tehnoloģiskos progresus, to izmantošana palīdz attīstīt jaunas idejas vai uzlabot esošos dizainus un produktus',
+    'aizsargāt': 'Bez patenta, preču zīmes, autortiesību un dizainparaugu īpašnieka atļaujas aizsargāto lietu nedrīkst īstenot, lietot, izplatīt un pārdot noteiktu laiku noteiktā teritorijā',
+    'orģināls': 'Pirmreizējs, autora paša radīts, nav iepriekš publiskots vai lietots',
+    'neatklāt': 'Neatklāj izgudrojumu nekāda veida publikācijās un prezentācijās pirms patenta pieteikuma iesniegšanas Patentu valdē',
+    'palīdzība': 'Patenta pieteikuma sastādīšana var būt sarežģīta, tādēļ izgudrotāji meklē padomu pie kvalificētiem patentu profesionāļiem – patentpilnvarniekiem',
+    'dizainparaugs': 'izstrādājuma ārējais izskats - forma, apveids, krāsa, virsmas īpatnības (iepakojumi, grafiskus simboli, zīmējumi, telpu noformējumi, šrifti, atsevišķas izstrādājuma detaļas)',
+    'izpēte': 'pirms preču zīmes reģistrācijas jāparliecinas vai tā atšķiras no citām preču zīmēm',
+    'autortiesības': 'Autortiesības aizsargā autora radošās darbības rezultātā radītus darbus (grāmatas, mūziku, filmas, lugas, gleznas, skulptūras, fotogrāfijas, būves)',
+    'pirātisms': 'Neatļauta intelektuālā īpašuma izplatīšana, zādzība, pavairošana, kopēšana, glabāšana, pārdošana vai cita veida izmantošana (aizsargāts ar Autortiesību likumu)',
+    'plaģiātisms': 'Apzināta vai neapzināta sveša darba vai idejas pilnīga vai daļēja piesavināšanās, uzdodot to par savu un nenorādot patieso autoru',
+    'risinājums': 'Ideja vai tehnoloģija, kas atrisina konkrētu problēmu un var tikt aizsargāta ar patentiem',
+    'tiesības': 'Likumā noteiktas pilnvaras vai privilēģijas attiecībā uz intelektuālā īpašuma izmantošanu',
+    'jauns': 'Oriģināla ideja vai izgudrojums, kas vēl nav zināms sabiedrībai, un var tikt aizsargāts ar intelektuālo īpašumu',
+    'īstenot': 'Praktiski izmantot vai ieviest jaunu izgudrojumu, tehnoloģiju vai ideju',
+    'vēsture': 'Intelektuālā īpašuma attīstība un piemērošanās mūsdienu pasaulei',
+    'ražot': 'Radīt fizisku vai digitālu produktu, kas var tikt aizsargāts ar intelektuālo īpašumu',
+    'īpašums': 'Nemateriālas vērtības, kas pieder indivīdam vai uzņēmumam un ir aizsargātas ar likumu',
+    'produkts': 'Kaut kas radīts vai izstrādāts, ko var komercializēt un aizsargāt ar intelektuālo īpašumu',
+    'publisks': 'Ideja, izgudrojums vai darbs, kas pieejams sabiedrībai',
+    'lietot': 'piešķirtāts tiesības vai licenzes izmantošana, lai pasargātu savus darbus',
+    'netirgo': 'Produktu vai izgudrojumu, kas nav pieejams pārdošanai vai komerciālai izmantošanai. Sākumā to vajag aizsargāt!',
+    'iesniegt': 'Pieteikuma nodošana atbildīgajām iestādēm (Patentu valde, Eiropas Patentu iestāde, utt.) intelektuālā īpašuma aizsardzībai',
+    'līgums': 'Juridisks dokuments, kas nosaka noteikumus starp pusēm par autortiesību nodošanu vai licencēšanu',
+    'sarežģīts': 'Patenta pieteikuma sastādīšana, tādēļ meklē padomu pie kvalificētiem patentu profesionāļiem – patentpilnvarniekiem',
+    'valde': 'Iestāde vai organizācija, kas uzrauga intelektuālā īpašuma tiesību piemērošanu (piem. Latvijā - Patentu valde)',
+    'iesniegums': 'Oficiāls pieteikums intelektuālā īpašuma aizsardzībai, piemēram, patentu vai preču zīmei',
+    'detalizēts': 'Precīzs apraksts par izgudrojumu vai darbu, lai nodrošinātu tā aizsardzību',
+    'apraksts': 'Dokuments, kas izskaidro intelektuālā īpašuma būtību, piemēram, izgudrojuma specifikācija',
+    'pieteikums': 'iesniegums intelektuālā īpašuma reģistrācijai',
+    'rezultāts': 'Tavs darbs tiek aizsargāts kopēšanas, jo tu izvēlējies to iesniegts patentu valdē',
+    'krāsa': 'Krāsu var aizsargāt kā daļu no preču zīmes, ja tā ir unikāla un saistīta ar zīmolu',
+    'forma': 'Produkts, kura dizainu un izskatu var aizsargāt ar patentu',
+    'investors': 'Persona vai uzņēmums, kas sniedz finansiālu atbalstu izgudrojuma attīstīšanai',
+    'reģistrēt': 'Oficiāla pieteikuma iesniegšana, lai aizsargātu intelektuālo īpašumu',
+    'gudri': 'Aizsargāt savas preču zīmes, lai neviens neizdomātu tās izmantot',
+    'tirgus': 'saimniecisko, juridisko un citu nosacījumu kopums, ar kura palīdzību pārdevēji un pircēji, kas tirgū ir galvenās darbojošās puses, brīvprātīgi vienojas par preču vai pakalpojumu apmaiņu',
+    'darbs': 'Oriģināls, radošs radījums, piemēram, literārs, māksliniecisks, vai zinātnisks darbs, kas var tikt aizsargāts ar autortiesībām',
+    'c': 'Starptautiski pieņemts autortiesību norādes simbols - C burts, kas atrodas aplī ( šo gan jau bija viegli uzminēt :D ) ',
+    'r': 'Reģistrētas preču zīmes simbols - R burts, kas atrodas aplī ( šo gan jau bija viegli uzminēt :D )'
+
     
 };
 
@@ -27,10 +105,10 @@ const maxGuesses = 6;
 let currentGuess = '';
 let currentRowIndex = 0;
 let wordGridRows = [];
-const keyboardLetters = {}; // To store references to keyboard key elements
-let wordLength = targetWord.length; // Dynamically capture the word length
+const keyboardLetters = {}; 
+let wordLength = targetWord.length; // saprast vārda garumu
 
-// Event listener to start the game
+// uzsakt speli
 document.getElementById('start-game').addEventListener('click', function () {
     document.getElementById('pre-screen').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
@@ -39,13 +117,13 @@ document.getElementById('start-game').addEventListener('click', function () {
     createKeyboard();
 });
 
-// Create the word grid
+// izv. word grid
 function createGrid() {
     const wordGrid = document.getElementById('word-grid');
     wordGrid.innerHTML = '';
     wordGridRows = [];
 
-    wordGrid.style.gridTemplateColumns = `repeat(${wordLength}, 60px)`; // Dynamic columns based on word length
+    wordGrid.style.gridTemplateColumns = `repeat(${wordLength}, 60px)`; // keyboard key krasu mainas
 
     for (let i = 0; i < maxGuesses; i++) {
         const row = [];
@@ -59,12 +137,12 @@ function createGrid() {
     }
 }
 
-// Create the keyboard
+// Create keyboard
 function createKeyboard() {
     const keyboardContainer = document.getElementById('keyboard');
     keyboardContainer.innerHTML = '';
 
-    const keyboardLayout = 'qwertyuiopasdfghjklzxcvbnmāčēģīķļņšūž'.split(''); // Latvian alphabet included
+    const keyboardLayout = 'qwertyuiopasdfghjklzxcvbnmāčēģīķļņšūž'.split(''); // latviesu alf.
     keyboardLayout.forEach((letter) => {
         const key = document.createElement('div');
         key.classList.add('key');
@@ -72,12 +150,15 @@ function createKeyboard() {
         keyboardContainer.appendChild(key);
         keyboardLetters[letter] = key;
 
-        // Add event listener for on-screen keyboard keys
+        // saprast kadu pogu spiest
         key.addEventListener('click', () => handleKeyPress(letter));
     });
+
+    // pogas backspace function
+    document.getElementById('backspace-button').addEventListener('click', handleBackspace);
 }
 
-// Handle key presses
+// keyboard presses
 document.addEventListener('keydown', keydownListener);
 
 function keydownListener(event) {
@@ -90,24 +171,24 @@ function keydownListener(event) {
             currentGuess = currentGuess.slice(0, -1);
             updateRow();
         }
-    } else if (/^[a-zA-Zāčēģīķļņšūž]$/.test(event.key.toLowerCase())) { // Update regex to accept Latvian letters
+    } else if (/^[a-zA-Zāčēģīķļņšūž]$/.test(event.key.toLowerCase())) { // akceptet latviesu burtus
         handleKeyPress(event.key.toLowerCase());
     }
 }
 
-// Handle key press from both physical and on-screen keyboards
+// pelite + real keyboard presses
 function handleKeyPress(key) {
-    if (currentGuess.length < wordLength) { // Limit guess to the dynamic word length
+    if (currentGuess.length < wordLength) { // limitet varda garumu (dinamiski)
         currentGuess += key;
         updateRow();
     }
 }
 
-// Enter button click event
+// Enter button
 document.getElementById('enter-button').addEventListener('click', handleEnter);
 
 function handleEnter() {
-    if (currentGuess.length === wordLength) { // Ensure guess matches word length
+    if (currentGuess.length === wordLength) { // parbaudit vai minejums sakrit ar varda garumu
         checkGuess(currentGuess);
     }
 }
@@ -119,7 +200,7 @@ function updateRow() {
     }
 }
 
-// Check the guess and update the keyboard colors
+// parbaudit atb. un updatot keyboard krasas
 function checkGuess(guess) {
     const currentRow = wordGridRows[currentRowIndex];
     const correctWord = targetWord.split('');
@@ -151,7 +232,7 @@ function checkGuess(guess) {
             box.classList.add('reveal', letterStatus[i]);
             box.textContent = letter.toUpperCase();
 
-            updateKeyboardKeyColor(letter, letterStatus[i]); // Update keyboard colors here
+            updateKeyboardKeyColor(letter, letterStatus[i]); // updatot keyboard krasas
 
         }, delay);
         delay += 500;
@@ -160,11 +241,11 @@ function checkGuess(guess) {
     setTimeout(() => {
         if (guess === targetWord) {
             showDefinition(true); // Pass true to indicate the word was guessed
-            setTimeout(showRestartButton, 4000); // Show restart button after 4 seconds
+            setTimeout(showRestartButton, 4000); // restart poga pec 4s
             smoothScrollToDefinition();
         } else if (guessesMade >= maxGuesses - 1) {
-            showDefinition(false); // Pass false to indicate the word wasn't guessed
-            setTimeout(showRestartButton, 4000); // Show restart button after 4 seconds
+            showDefinition(false); // false -> ja vard netika uzminēts
+            setTimeout(showRestartButton, 4000); // velviena restar poga pec 4s
             smoothScrollToDefinition();
         } else {
             guessesMade++;
@@ -182,7 +263,8 @@ function checkGuess(guess) {
     }, delay);
 }
 
-// Function to update keyboard key colors
+
+// funkicja lai updatotu keyboard krasas
 function updateKeyboardKeyColor(letter, status) {
     const keyElement = keyboardLetters[letter.toLowerCase()];
     
@@ -210,23 +292,23 @@ function showDefinition(isGuessed) {
         "Varbūt prasīja piecus mēģinājumus, bet galā uzminējāt!", // 5 tries
         "Bijāt uz plāna ledus, bet uzminējāt!" // 6 tries
     ];
-    
 
     if (isGuessed) {
         triesTitle.textContent = messages[guessesMade];
     } else {
         triesTitle.textContent = "Jūs netrāpat 100% no iespējām ko nemēģināt. Veiksmi nākamreiz!";
     }
-    triesTitle.style.display = 'block'; // Force the title to be visible
-    console.log(triesTitle.textContent); // Log to check if it's getting updated
-    
+    triesTitle.style.display = 'block'; // title to be visible
+
     if (definition) {
         const formattedWord = targetWord.charAt(0).toUpperCase() + targetWord.slice(1).toLowerCase();
         document.getElementById('game-over-title').style.display = 'block';
-        document.getElementById('definition').innerText = `${formattedWord}: ${definition}`;
+        document.getElementById('definition').innerHTML = `<span class="rainbow-word">${formattedWord}</span>: ${definition}`;
         document.getElementById('definition-screen').style.display = 'flex';
     }
 }
+
+
 
 function smoothScrollToDefinition() {
     const definitionScreen = document.getElementById('definition-screen');
@@ -258,7 +340,7 @@ function resetGame() {
         currentRowIndex = 0;
         wordGridRows = [];
         targetWord = wordList[Math.floor(Math.random() * wordList.length)];
-        wordLength = targetWord.length; // Recalculate word length on reset
+        wordLength = targetWord.length; // recalclate word on reset
         document.getElementById('message').innerText = '';
         document.getElementById('definition').innerText = '';
         document.getElementById('definition-screen').style.display = 'none';
@@ -273,4 +355,11 @@ function resetGame() {
         createGrid();
         createKeyboard();
     }, 500);
+}
+// Backspace button handling
+function handleBackspace() {
+    if (currentGuess.length > 0) {
+        currentGuess = currentGuess.slice(0, -1);
+        updateRow();
+    }
 }
