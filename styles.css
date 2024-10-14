@@ -1,9 +1,9 @@
-/* General Styles */
+/* smukumam */
 body {
     font-family: 'Style Script', 'Patrick Hand', Arial, cursive;
     margin: 0;
     padding: 0;
-    background-color: #060b1e;  /* Dark blue background */
+    background-color: #060b1e;  
     color: white;
     height: 100vh;
     overflow: hidden;
@@ -14,10 +14,9 @@ h1 {
     margin: -5px 0;
     text-align: left;
     text-shadow: 2px 2px #000;
-    font-family: 'Style Script', cursive;  /* Handwriting font */
+    font-family: 'Style Script', cursive; 
 }
 
-/* Pre-screen: Centering and styling for bigger text and button */
 #pre-screen {
     display: flex;
     flex-direction: column;
@@ -31,14 +30,14 @@ h1 {
     font-size: 5rem;
     animation: fadeIn 1s ease-in-out;
     font-family: 'Style Script', cursive;
-    margin-bottom: 50px; /* Adjust this value to reduce the gap */
+    margin-bottom: 50px; 
 }
 
 #pre-screen p {
     font-size: 2.3rem;
     animation: fadeIn 2s ease-in-out;
-    margin-top: 0; /* Optional: further fine-tune the gap */
-    font-family: 'Lexend', sans-serif; /* Apply the Caveat font to the second header */
+    margin-top: 0; 
+    font-family: 'Lexend', sans-serif; 
 }
 
 #start-game {
@@ -59,7 +58,6 @@ h1 {
     box-shadow: 0 0 20px #fc01e9;
 }
 
-/* Layout: Shift game container to the left */
 #game-container {
     display: flex;
     flex-direction: column;
@@ -71,7 +69,6 @@ h1 {
     position: relative;
 }
 
-/* Container for word grid and image */
 #content-wrapper {
     display: flex;
     gap: 20px;
@@ -80,7 +77,6 @@ h1 {
     animation: fadeInUp 1s ease-in-out;
 }
 
-/* Grid for words */
 #word-grid {
     display: grid;
     grid-template-rows: repeat(6, 60px);
@@ -104,10 +100,9 @@ h1 {
     border: 1px solid black;
     z-index: 3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-family: Arial, sans-serif; /* Exclude letter-box from handwriting fonts */
+    font-family: Arial, sans-serif; 
 }
 
-/* Animation for letter box reveal */
 .reveal {
     animation: flip 0.6s ease-in-out;
 }
@@ -119,7 +114,7 @@ h1 {
     100% { transform: rotateX(0); }
 }
 
-/* Keyboard styles with glowing effects */
+/* Keyboard glowing effects */
 .keyboard {
     display: flex;
     justify-content: center;
@@ -145,7 +140,7 @@ h1 {
     cursor: pointer;
     user-select: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: Arial, sans-serif; /* Exclude keyboard from handwriting fonts */
+    font-family: Arial, sans-serif; 
 }
 
 .key:hover {
@@ -155,12 +150,12 @@ h1 {
 
 /* Enter button styles (White button) */
 .enter-btn {
-    margin: 20px 0;
-    padding: 10px; /* Keep padding fixed */
-    width: 300px; /* Fixed width */
-    height: 50px; /* Fixed height */
-    font-size: 30px; /* Increased font size */
-    line-height: 20px; /* Adjust line-height to keep button size fixed */
+    margin: 20px 0; 
+    padding: 10px; 
+    width: 300px; 
+    height: 50px; 
+    font-size: 30px; 
+    line-height: 20px; 
     cursor: pointer;
     text-align: center;
     background-color: #ffffff;
@@ -169,14 +164,17 @@ h1 {
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Lexend', sans-serif;
+    display: block; 
 }
+
 
 .enter-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff;
 }
 
-/* Image beside the word grid (locked in place) */
+
+/* Image pa labi no word grid (locked in place) */
 #word-image {
     max-width: 870px;
     height: auto;
@@ -206,18 +204,18 @@ h1 {
 #tries-title {
     font-size: 2.5rem;
     color: white;
-    margin-bottom: 20px; /* Smaller margin to create space above the game-over title */
+    margin-bottom: 20px; 
     font-family: 'Lexend', sans-serif;
     text-align: center;
-    display: block; /* Ensure it's set to block for testing */
-    animation: blueGlow 2s infinite alternate; /* Blue glow effect */
+    display: block; 
+    animation: blueGlow 2s infinite alternate; /* zils glow effect */
 }
 
 #game-over-title {
     font-size: 3rem;
     color: white;
     text-align: center;
-    margin-bottom: 50px; /* Increase margin to create a bigger gap */
+    margin-bottom: 50px; 
     font-family: 'Lexend', sans-serif;
 }
 
@@ -231,8 +229,10 @@ h1 {
     animation: glow 2s infinite alternate;
 }
 
+
+
 #restart-game {
-    margin-top: 0px; /* Decrease this value to move the button higher */
+    margin-top: 0px; 
     padding: 10px 20px;
     font-size: 1.5rem;
     font-family: 'Lexend', sans-serif;
@@ -253,19 +253,19 @@ h1 {
 
 /* Key color effects */
 .correct {
-    background-color: #6aaa64; /* Green for correct letters */
+    background-color: #6aaa64; /* zals for correct letters */
     color: white;
     box-shadow: 0 0 10px #6aaa64;
 }
 
 .present {
-    background-color: #c9b458; /* Yellow for present letters */
+    background-color: #c9b458; /* dzletens for present letters */
     color: white;
     box-shadow: 0 0 10px #c9b458;
 }
 
 .absent {
-    background-color: #787c7e; /* Grey for absent letters */
+    background-color: #787c7e; /* peleks for absent letters */
     color: white;
     box-shadow: 0 0 10px #787c7e;
 }
@@ -292,7 +292,7 @@ h1 {
         transform: translateY(-10px);
     }
 }
-
+/* pink glow animation */
 @keyframes glow {
     from {
         text-shadow: 0 0 10px #fc01e9, 0 0 20px #fc01e9, 0 0 30px #fc01e9;
@@ -302,7 +302,7 @@ h1 {
     }
 }
 
-/* New blue glow animation */
+/* blue glow animation */
 @keyframes blueGlow {
     from {
         text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
@@ -311,4 +311,22 @@ h1 {
         text-shadow: 0 0 20px #0011ff, 0 0 30px #0011ff, 0 0 40px #0011ff;
     }
 }
+/* rainbow glow animation */
+.rainbow-word {
+    animation: waveGlow 0.5s ease-in-out infinite;
+    color: white;
+}
+
+@keyframes waveGlow {
+    0% {
+        text-shadow: 0 0 40px red, 0 0 60px yellow, 0 0 80px blue;
+    }
+    50% {
+        text-shadow: 25px 25px 50px violet, -25px -25px 70px green;
+    }
+    100% {
+        text-shadow: 0 0 40px red, 0 0 60px yellow, 0 0 80px blue;
+    }
+}
+
 
