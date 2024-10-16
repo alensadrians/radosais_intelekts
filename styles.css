@@ -130,7 +130,7 @@ h1 {
 .key {
     width: 40px;
     height: 40px;
-    background-color: #ddd;
+    background-color: #ea94fc; /* old color #ddd */
     text-align: center;
     line-height: 40px;
     font-size: 18px;
